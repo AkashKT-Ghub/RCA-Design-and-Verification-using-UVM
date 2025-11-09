@@ -7,13 +7,12 @@ class adder_sequence extends uvm_sequence #(adder_transaction);
     endfunction
     
     virtual task body();
-        adder_transaction trans;
-        repeat (10) begin
+      adder_transaction trans;
+      repeat (5) begin
             trans = adder_transaction::type_id::create("trans");
             start_item(trans);
               assert (trans.randomize());
             finish_item(trans);
-        end
+      end
     endtask
-  
 endclass
