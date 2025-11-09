@@ -2,7 +2,7 @@ import uvm_pkg::*;
 `include "uvm_macros.svh"
 
 `include "interface.sv"
-`include "transection.sv"
+`include "transaction.sv"
 `include "generator.sv"
 `include "driver.sv"
 `include "monitor.sv"
